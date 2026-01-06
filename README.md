@@ -554,7 +554,7 @@ Big picture takeaway
 - Using /opt follows Linux best practices for third-party tools
 - Together, they form a clean, production-ready setup ideal for DevOps, CI/CD, and enterprise environments
 ```
-
+https://www.computernetworkingnotes.com/linux-tutorials/linux-user-profile-management-and-environment-variable.html
 
 1. **Download & extract** (get the current link from the docs if needed):
 
