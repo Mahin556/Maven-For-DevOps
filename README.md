@@ -288,7 +288,21 @@ Your app declares library **A**. A depends on **B**, and B depends on **C/D/E**.
     >
     > **Note 2:** Maven *can* orchestrate non-JVM work via plugins (e.g., `exec`, frontend), but ecosystems like .NET, Python, Rust, Go, and JS have better native tools. Prefer Maven mainly when your project’s center of gravity is **JVM**.
 
+```bash
+Any language that compiles to JVM bytecode can use **Maven** as a build tool.
+This includes:
+• Java
+• Scala
+• Kotlin
+• Groovy
 
+All of these languages require the **JVM** to run, which is usually provided
+either as a **JRE** or as part of a full **JDK**.
+
+Maven can also be used for other languages through plugins, but in most cases
+it’s better to use the **native build tools** designed for those languages
+(e.g., npm for JavaScript, pip/poetry for Python, Go tooling for Go).
+```
 
 * **It goes beyond “compile & package.”**
   From one declarative file, Maven standardizes **dependency resolution (with transitives), testing, quality gates, reporting, packaging, and publishing**.
