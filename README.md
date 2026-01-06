@@ -166,7 +166,27 @@ create venv / install deps → lint/test/scan → bundle/transpile (if any) → 
 
 * Compiled stacks **require** build tools to turn code into executables.
 * Interpreted stacks **benefit** from build tools for dependency control, optimization, packaging, and reproducibility—so you still get a **clean, promotable artifact** for Dev → Stage → Prod.
+```bash
+Even interpreted languages still benefit from build tools because:
 
+• You need reliable dependency management  
+  – installing, pinning, and upgrading libraries consistently
+
+• You want to automate repetitive tasks  
+  – testing, linting, formatting, packaging, and code generation
+
+• You need correct execution order  
+  – dependencies → tests → build → package
+
+• You need CI/CD orchestration  
+  – builds must run the same way on every machine
+
+• You need reproducible artifacts  
+  – identical outputs across dev, CI, and production environments
+
+In short:
+Build tools bring **consistency, automation, and reproducibility**, even when the language itself doesn’t require compilation.
+```
 ---
 
 # Why build tools? (DevOps/SRE edition)
